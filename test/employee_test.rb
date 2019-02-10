@@ -10,5 +10,5 @@ class EmployeeTest < MiniTest::Test
   def test_it_exists
     assert_instance_of Employee, @employee
   end
-  end
+
 end
