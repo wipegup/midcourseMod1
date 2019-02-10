@@ -17,12 +17,10 @@ class DepartmentTest < MiniTest::Test
     assert_instance_of Department, @department
   end
 
-  def test_it_has_name
+  def test_it_has_attributes
     assert_equal "Customer Service", @department.name
-  end
-
-  def test_employees_starts_empty
     assert_equal [], @department.employees
+    assert_equal 0, @department.expenses
   end
 
   def test_hire_adds_employees_to_employee_array
