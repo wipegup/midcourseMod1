@@ -11,4 +11,9 @@ class EmployeeTest < MiniTest::Test
     assert_instance_of Employee, @employee
   end
 
+  def test_it_has_attributes
+    assert_equal "Bobbi Jaeger", @employee.name
+    assert_equal 30, @employee.age
+    assert_equal 100000, @employee.salary
+  end
 end
