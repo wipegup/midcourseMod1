@@ -29,4 +29,11 @@ class DepartmentTest < MiniTest::Test
 
     assert_equal [@bobbi, @aaron], @department.employees
   end
+
+  def test_expense_increments_expenses
+    @department.expense(100)
+    @department.expense(25)
+
+    assert_equal 125, @department.expenses
+  end
 end
