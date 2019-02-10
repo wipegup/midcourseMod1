@@ -24,4 +24,11 @@ class DepartmentTest < MiniTest::Test
   def test_employees_starts_empty
     assert_equal [], @department.employees
   end
+
+  def test_hire_adds_employees_to_employee_array
+    @department.hire(@bobbi)
+    @department.hire(@aaron)
+
+    assert_equal [@bobbi, @aaron], @department.employees
+  end
 end
