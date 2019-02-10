@@ -5,6 +5,12 @@ require './lib/employee'
 class DepartmentTest < MiniTest::Test
   def setup
     @department = Department.new("Customer Service")
+    @bobbi = Employee.new({name: "Bobbi Jaeger",
+                           age: "30",
+                           salary: "100000"})
+    @aaron = Employee.new({name: "Aaron Tanaka",
+                           age: "25",
+                           salary: "90000"})
   end
 
   def test_it_exists
