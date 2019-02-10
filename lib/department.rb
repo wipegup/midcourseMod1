@@ -9,4 +9,8 @@ class Department
   def hire(employee)
     @employees << employee
   end
+
+  def expense(expense)
+    @expenses += expense
+  end
 end
